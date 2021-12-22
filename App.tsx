@@ -11,4 +11,6 @@ export default function App() {
 
 const AppView = styled.View`
   flex: 1;
+  margin: 10px;
+  border-radius: 40px;
 `;
