@@ -1,10 +1,11 @@
 import styled from "styled-components/native";
-import { Text } from "react-native";
+
+import { List } from "./src/pages/list";
 
 export default function App() {
   return (
     <AppView>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <List />
     </AppView>
   );
 }
@@ -13,4 +14,5 @@ const AppView = styled.View`
   flex: 1;
   margin: 10px;
   border-radius: 40px;
+  border: 10px solid red;
 `;

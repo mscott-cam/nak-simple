@@ -1,5 +1,9 @@
+import { render } from "@testing-library/react-native";
+
 import App from "./App";
 
-test("app runs", () => {
-  expect(true).toBeTruthy();
+test("App component displays list page by default", () => {
+  const { container, getByText } = render(<App />);
+  expect(container).toBeDefined();
+  expect(getByText("Test")).toBeTruthy();
 });
