@@ -1,14 +1,14 @@
-import styled from "styled-components/native";
-import { Text } from "react-native";
+import styled from 'styled-components/native'
+import { ActionReminder } from '../../components'
 
 export function List() {
   return (
     <ListContainer>
-      <Text>Test</Text>
+      <ActionReminder />
     </ListContainer>
-  );
+  )
 }
 
 export const ListContainer = styled.View`
   flex: 1;
-`;
+`
