@@ -21,6 +21,7 @@ export function List() {
 export const ListContainer = styled.View`
   flex: 1;
   margin: 0;
+  align-items: center;
 `
 
 export const testActions = [
