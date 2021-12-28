@@ -7,7 +7,7 @@ import { ActionReminder } from '../../components'
 
 export function List() {
   return (
-    <ListContainer>
+    <ListContainer testID="list">
       <FlatList
         data={testActions.map((text) => ({ text, key: uuid() }))}
         renderItem={({ item: { key, text } }) => (
