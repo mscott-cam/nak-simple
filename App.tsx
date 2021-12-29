@@ -1,12 +1,13 @@
+import { useState } from 'react'
 import styled from 'styled-components/native'
-import { Platform } from 'react-native'
 
 import { List } from './src/pages'
 
 export default function App() {
+  const [actions, setActions] = useState([])
   return (
     <AppView>
-      <List />
+      <List actions={actions} />
     </AppView>
   )
 }
@@ -14,5 +15,5 @@ export default function App() {
 const AppView = styled.View`
   flex: 1;
   border-radius: 40px;
-  margin-top: ${Platform.OS === 'ios' ? '32px' : 0};
+  background-color: #a0a58d;
 `
