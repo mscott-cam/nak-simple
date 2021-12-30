@@ -18,4 +18,5 @@ const Container = styled.View`
 
 const ReminderText = styled.Text`
   padding: 10px;
+  font-weight: 400;
 `
