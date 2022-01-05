@@ -29,7 +29,7 @@ type Action = {
 }
 
 export const ListContainer = styled.View`
-  flex: 1;
   margin: 0;
-  align-items: center;
+  margin-top: 50px;
+  /* border: 1px solid blue; */
 `

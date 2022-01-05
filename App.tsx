@@ -4,8 +4,16 @@ import { v4 as uuid } from 'uuid'
 
 import { List } from './src/pages'
 
+const singleAction = [
+  {
+    text: 'feed the dog',
+    key: uuid(),
+  },
+]
+
 export default function App() {
-  const [actions, setActions] = useState(testActions)
+  const [actions, setActions] = useState(singleAction)
+  // const [actions, setActions] = useState(testActions)
   console.log(actions.length)
 
   return (
